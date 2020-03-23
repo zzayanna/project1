@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3</title>
+    <style>
+        div{
+            text-align: center;
+            padding-top: 30px;
+        }
+        .gallery {
+            border: 2px solid lightgrey;
+        }
+        .gallery:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img class="gallery" src="1.jpg" width = "150px" height="100px" onclick="showPicture(1)">
+    <img class="gallery" src="2.jpg" width = "150px" height="100px" onclick="showPicture(2)">
+    <img class="gallery" src="3.jpg" width = "150px" height="100px" onclick="showPicture(3)">
+    <img class="gallery" src="4.jpg" width = "150px" height="100px" onclick="showPicture(4)">
+</div>
+<div id ="pic"></div>
+<script>
+
+    function showPicture(number) {
+        pic.innerHTML = `<img src="${number}.jpg" width = "650px" height="500px">`;
+    }
+
+</script>
+</body>
+</html>
